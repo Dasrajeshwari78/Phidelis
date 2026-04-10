@@ -125,7 +125,7 @@ const HowWeCreateValue = () => {
           {/* Right Side: Large Feature Image */}
           <div className="hcv-image-container w-full lg:w-[280px] aspect-[4/3] lg:aspect-auto lg:h-[300px] rounded-[12px] overflow-hidden shrink-0 relative z-0">
             <img
-              src="/homePage/hoeWeCreateValueImg.jpg"
+              src="/homePage/howWeCreateValueImg.jpg"
               alt="Singapore Skyline"
               className="absolute inset-0 w-full h-full object-cover"
             />

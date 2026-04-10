@@ -5,9 +5,9 @@ import { useGSAP } from '@gsap/react';
 
 const Navbar = () => {
   const location = useLocation();
-  const isCompanyPage = location.pathname === '/company';
-  const isTechnologyPage = location.pathname === '/technology';
-  const isSolutionsPage = location.pathname === '/solutions';
+  const isCompanyPage = location.pathname === "/company";
+  const isTechnologyPage = location.pathname === "/technology";
+  const isSolutionsPage = location.pathname === "/solutions";
   const navRef = useRef(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,7 +26,7 @@ const Navbar = () => {
       y: -80,
       opacity: 0,
       duration: 1,
-      ease: 'power3.out',
+      ease: "power3.out",
     });
   }, []);
 
