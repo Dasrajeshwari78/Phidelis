@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SeasonedExperts = () => {
   const containerRef = useRef(null);
-  
+
   const teamMembers = [
     '/people/p1.png',
     '/people/p2.png',
@@ -57,37 +57,37 @@ const SeasonedExperts = () => {
       duration: 0.8,
       ease: "power3.out",
     })
-    .from(".se-desc", {
-      y: 30,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power3.out",
-    }, "-=0.4")
-    .from(".se-btn", {
-      y: 20,
-      opacity: 0,
-      duration: 0.5,
-      ease: "power3.out",
-    }, "-=0.4");
+      .from(".se-desc", {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      }, "-=0.4")
+      .from(".se-btn", {
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+        ease: "power3.out",
+      }, "-=0.4");
   }, { scope: containerRef });
 
   return (
     <section ref={containerRef} className="w-full bg-[#2A3A6A] py-24 px-6 md:px-[20px] lg:px-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="se-title text-white font-['Inter'] font-medium text-[36px] md:text-[42px] lg:text-[40px] tracking-normal mb-16 lg:mb-20">
+        <h2 className="se-title text-white font-['Inter'] font-medium text-[clamp(28px,5vw,40px)] tracking-normal mb-16 lg:mb-20">
           Seasoned Experts, Trusted Advisors
         </h2>
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           {/* Left Column - Team Avatars */}
           <div className="w-full lg:w-1/2">
-            <div className="se-avatars-grid grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12 max-w-[500px]">
+            <div className="se-avatars-grid grid grid-cols-3 gap-x-4 md:gap-x-6 gap-y-8 md:gap-y-12 max-w-[500px] mx-auto lg:mx-0">
               {teamMembers.map((img, idx) => (
                 <div key={idx} className="se-avatar flex justify-center">
-                  <div className="w-[110px] h-[110px] md:w-[135px] md:h-[135px] rounded-full bg-white overflow-hidden shadow-sm flex items-center justify-center">
-                    <img 
-                      src={img} 
-                      alt={`Team Member ${idx + 1}`} 
+                  <div className="w-[90px] h-[90px] sm:w-[110px] sm:h-[110px] md:w-[135px] md:h-[135px] rounded-full bg-white overflow-hidden shadow-sm flex items-center justify-center">
+                    <img
+                      src={img}
+                      alt={`Team Member ${idx + 1}`}
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
