@@ -80,8 +80,16 @@ const PartnerWithUs = () => {
                 Contact
               </h3>
               <div className="font-['Inter'] font-medium text-[15px] leading-[26px] opacity-90">
-                <p>management@phideliscapital.com</p>
-                <p>careers@phideliscapital.com</p>
+                
+                <a 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=management@phideliscapital.com"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block hover:underline"
+                >
+                  management@phideliscapital.com
+                </a>
+
                 <p>+65 6485 4142</p>
               </div>
             </div>
@@ -99,7 +107,7 @@ const PartnerWithUs = () => {
               <div className="flex flex-col md:flex-row gap-10">
                 {/* First Name */}
                 <div className="flex flex-col gap-3 w-full md:w-1/2">
-                  <label className="text-[#64748B] font-['Inter'] font-bold text-[12px] md:text-[13px] tracking-tight">
+                  <label className="text-[#24346D] font-['Inter'] font-bold text-[12px] md:text-[13px] tracking-tight">
                     First Name
                   </label>
                   <input
@@ -122,7 +130,7 @@ const PartnerWithUs = () => {
               <div className="flex flex-col md:flex-row gap-10">
                 {/* Email */}
                 <div className="flex flex-col gap-3 w-full md:w-1/2">
-                  <label className="text-[#64748B] font-['Inter'] font-bold text-[12px] md:text-[13px] tracking-tight">
+                  <label className="text-[#24346D] font-['Inter'] font-bold text-[12px] md:text-[13px] tracking-tight">
                     Email
                   </label>
                   <input
@@ -144,7 +152,7 @@ const PartnerWithUs = () => {
 
               {/* Message */}
               <div className="flex flex-col gap-3 mt-2">
-                <label className="text-[#64748B] font-['Inter'] font-bold text-[12px] md:text-[13px] tracking-tight">
+                <label className="text-[#24346D] font-['Inter'] font-bold text-[12px] md:text-[13px] tracking-tight">
                   Message
                 </label>
                 <input
